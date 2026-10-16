@@ -1,0 +1,103 @@
+AUDIT_RESULT {
+ "mode": "privileged-db-role",
+ "crud.create": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"4b34d14c-e0d6-4807-a043-b7324768b911\",\"tenant_id\":\"34bb01b5-e694-4e09-a057-23d0d96bdade\",\"name\":\"Auto-assign new leads\",\"description\":null,\"trigg"
+ },
+ "crud.list": {
+  "status": 200,
+  "body": "{\"data\":[{\"id\":\"4b34d14c-e0d6-4807-a043-b7324768b911\",\"name\":\"Auto-assign new leads\",\"description\":null,\"triggerType\":\"lead_created\",\"triggerConfig\":{},\"conditi"
+ },
+ "crud.patch": {
+  "status": 200,
+  "body": "{\"data\":{\"id\":\"4b34d14c-e0d6-4807-a043-b7324768b911\",\"tenant_id\":\"34bb01b5-e694-4e09-a057-23d0d96bdade\",\"name\":\"Auto-assign new leads\",\"description\":null,\"trigg"
+ },
+ "crud.executions": {
+  "status": 200,
+  "body": "{\"data\":[]}"
+ },
+ "crud.delete": {
+  "status": 200,
+  "body": "{\"success\":true,\"id\":\"4b34d14c-e0d6-4807-a043-b7324768b911\"}"
+ },
+ "lead.created": 201,
+ "worker.eventConsumers": [],
+ "worker.jobHandlerTypes": [
+  "mail.send",
+  "leads.import",
+  "inbound.process"
+ ],
+ "db.domain_events.lead_created": 1,
+ "db.automation_executions": 0,
+ "db.automation_rules.run_count": [
+  {
+   "name": "Auto-assign new leads",
+   "status": "archived",
+   "run_count": 0,
+   "last_run_at": null
+  },
+  {
+   "name": "probe rule",
+   "status": "active",
+   "run_count": 0,
+   "last_run_at": null
+  }
+ ],
+ "db.tasks_created_by_rule": 0,
+ "db.jobs_for_automation": 0,
+ "validate.unknownActionType": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"8d6723e2-1f6a-4fb7-849a-07d44f0a962e\",\"tenant_id\":\"34bb01b5-e694-4e09-a057-23d0d96bdade\",\"name\":\"x\",\"description\":null,\"trigger_type\":\"lead_creat"
+ },
+ "validate.selfTriggeringRule(stage change → stage change)": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"b524b3a4-1092-434f-9165-4c45138fd7bd\",\"tenant_id\":\"34bb01b5-e694-4e09-a057-23d0d96bdade\",\"name\":\"loop\",\"description\":null,\"trigger_type\":\"lead_st"
+ },
+ "validate.500actions": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"583960dd-c395-40c3-93be-7759f3e55d4b\",\"tenant_id\":\"34bb01b5-e694-4e09-a057-23d0d96bdade\",\"name\":\"big\",\"description\":null,\"trigger_type\":\"lead_cre"
+ },
+ "roles": {
+  "sales_manager": {
+   "POST /api/automation": 201,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "marketing_manager": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "sales_agent": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "auditor": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "executive_readonly": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  }
+ },
+ "crosstenant": {
+  "patch": 404,
+  "delete": 404,
+  "executions": {
+   "status": 200,
+   "body": "{\"data\":[]}"
+  },
+  "list": {
+   "status": 200,
+   "body": "{\"data\":[]}"
+  },
+  "status_after": "active"
+ },
+ "ui.lostUpdate.finalRules": [
+  "UI rule B"
+ ],
+ "ui.rulesTableRowsForUiRules": 0,
+ "ui.settingsAcceptsAnyShape": {
+  "status": 200,
+  "body": "{\"data\":{\"id\":\"34bb01b5-e694-4e09-a057-23d0d96bdade\",\"name\":\"Audit A\",\"slug\":\"main\",\"is_active\":true,\"settings\":{\"x\":{\"deep\":{\"deeper\":1}},\"automation_rules\":\"n"
+ }
+}

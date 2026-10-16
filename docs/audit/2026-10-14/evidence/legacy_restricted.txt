@@ -1,0 +1,185 @@
+AUDIT_RESULT {
+ "mode": "restricted-db-role",
+ "ownerReads": {
+  "GET /api/dashboard/metrics": {
+   "status": 200,
+   "shape": "leads,stages,viewings,tasks,properties,recentLeads"
+  },
+  "GET /api/dashboard/attribution": {
+   "status": 200,
+   "shape": "object{total_attributed,source_breakdown,campaign_performance,channel_metrics,stage_by_source}"
+  },
+  "GET /api/reports/overview": {
+   "status": 200,
+   "shape": "object{period,summary,funnelStages,sourceBreakdown,agentPerformance}"
+  },
+  "GET /api/reports/attribution": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "GET /api/reports/pipeline-velocity": {
+   "status": 500,
+   "shape": "error",
+   "err": "Failed to generate pipeline velocity report"
+  },
+  "GET /api/viewings": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "GET /api/integrations": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "GET /api/integrations/providers": {
+   "status": 200,
+   "shape": "array(4)"
+  },
+  "GET /api/custom-fields": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "GET /api/tenant/members": {
+   "status": 200,
+   "shape": "array(4)"
+  },
+  "GET /api/tenant/audit-logs": {
+   "status": 200,
+   "shape": "array(5)"
+  },
+  "GET /api/tenant/config": {
+   "status": 200,
+   "shape": "object{id,name,slug,is_active,settings,created_at}"
+  },
+  "POST /api/properties/match": {
+   "status": 200,
+   "shape": "matches"
+  }
+ },
+ "viewings": {
+  "owner schedules": {
+   "status": 201,
+   "shape": "object{success,agent_id,viewing_id,scheduled_at,duration_minutes}"
+  },
+  "owner lists": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "agent lists (sees leads that are not theirs?)": 0,
+  "agent lists": {
+   "status": 200,
+   "shape": "array(0)",
+   "rows": 0,
+   "includesContactPII": false
+  },
+  "auditor schedules a viewing": {
+   "status": 201,
+   "shape": "object{success,agent_id,viewing_id,scheduled_at,duration_minutes}"
+  },
+  "executive_readonly schedules a viewing": {
+   "status": 201,
+   "shape": "object{success,agent_id,viewing_id,scheduled_at,duration_minutes}"
+  },
+  "other tenant schedules on owner lead+property": {
+   "status": 404,
+   "shape": "error,code",
+   "err": "Lead or property not found in active workspace"
+  },
+  "other tenant lists with owner lead filter": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "6 concurrent bookings of one slot → statuses": [
+   201,
+   409,
+   409,
+   409,
+   409,
+   409
+  ],
+  "viewing events emitted (domain_events)": 0,
+  "cancel/reschedule/no-show endpoints": "none registered (only GET / and POST / exist in routes/viewings.ts)"
+ },
+ "integrations": {
+  "create with a token inside config": {
+   "status": 201,
+   "shape": "object{id,provider,display_name,is_active,config,created_at}"
+  },
+  "GET returns the token in clear?": false,
+  "credentials_enc column populated": false,
+  "agent lists integrations": {
+   "status": 403,
+   "shape": "type,title,status,detail,code,requestId,error",
+   "err": "Current role (sales_agent) lacks sufficient privileges"
+  },
+  "other tenant PATCH owner integration": {
+   "status": 404,
+   "shape": "error",
+   "err": "Integration not found"
+  }
+ },
+ "customFields": {
+  "create number field (required, regex)": {
+   "status": 201,
+   "shape": "object{id,tenant_id,entity_type,name,label,field_key}"
+  },
+  "save text \"abc\" into a number field with a digits-only regex": {
+   "status": 200,
+   "shape": "success"
+  },
+  "save value for a lead id that does not exist": {
+   "status": 200,
+   "shape": "success"
+  },
+  "other tenant writes a value using OWNER field id on its own lead": {
+   "status": 200,
+   "shape": "success"
+  },
+  "rows tied to the owner field id from another tenant": [
+   {
+    "is_owner_tenant": false,
+    "n": 1
+   },
+   {
+    "is_owner_tenant": true,
+    "n": 2
+   }
+  ],
+  "other tenant deletes the owner value (empty value, owner lead id)": {
+   "status": 200,
+   "shape": "success"
+  },
+  "owner value still present afterwards": 1,
+  "other tenant reads owner lead values": {
+   "status": 200,
+   "shape": "array(0)"
+  },
+  "agent saves a value on a lead they do not own": {
+   "status": 200,
+   "shape": "success"
+  }
+ },
+ "scoping": {
+  "agent dashboard": {
+   "status": 200,
+   "shape": "leads,stages,viewings,tasks,properties,recentLeads",
+   "totalLeadsShown": "{\"leads\":{\"total\":0,\"new\":0,\"contacted\":0,\"qualified\":0,\"converted\":0,\"lost\":0,\"totalPipelineValue\":0,\"conversionRate\":\""
+  },
+  "agent reports/overview": {
+   "status": 403,
+   "shape": "type,title,status,detail,code,requestId,error",
+   "err": "Current role (sales_agent) lacks sufficient privileges"
+  },
+  "executive reports/overview": {
+   "status": 200,
+   "shape": "object{period,summary,funnelStages,sourceBreakdown,agentPerformance}"
+  },
+  "auditor tenant/audit-logs": {
+   "status": 200,
+   "shape": "array(9)"
+  },
+  "agent tenant/members": {
+   "status": 200,
+   "shape": "array(4)"
+  }
+ }
+}

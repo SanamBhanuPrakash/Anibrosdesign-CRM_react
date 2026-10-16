@@ -1,0 +1,102 @@
+AUDIT_RESULT {
+ "privileged": {
+  "truth": {
+   "v1_list_total": 5,
+   "db_live_leads": 5,
+   "db_all_leads_including_archived": 6,
+   "db_status_counts": [
+    {
+     "status": "contacted",
+     "n": 1
+    },
+    {
+     "status": "open",
+     "n": 4
+    }
+   ],
+   "db_pipeline_value_live": 18000000
+  },
+  "dashboard": {
+   "leads": {
+    "total": 6,
+    "new": 5,
+    "contacted": 1,
+    "qualified": 0,
+    "converted": 0,
+    "lost": 0,
+    "totalPipelineValue": 21000000,
+    "conversionRate": "0.0%",
+    "unassigned": 0
+   },
+   "stageRows": [
+    [
+     "New",
+     4
+    ],
+    [
+     "Contact Attempted",
+     1
+    ],
+    [
+     "Contacted",
+     1
+    ],
+    [
+     "Qualified",
+     0
+    ],
+    [
+     "Viewing Scheduled",
+     0
+    ],
+    [
+     "Viewing Completed",
+     0
+    ],
+    [
+     "Negotiation",
+     0
+    ],
+    [
+     "Booking Reserved",
+     0
+    ],
+    [
+     "Won",
+     0
+    ],
+    [
+     "Lost",
+     0
+    ],
+    [
+     "Invalid",
+     0
+    ],
+    [
+     "Unqualified",
+     0
+    ],
+    [
+     "Nurture",
+     0
+    ]
+   ]
+  },
+  "reportsOverviewSummary": {
+   "newLeads": 5,
+   "newLeadsDelta": 100,
+   "conversions": 0,
+   "conversionsDelta": 0,
+   "losses": 0,
+   "wonValue": 0,
+   "wonValueDelta": 0,
+   "conversionRate": 0,
+   "avgDaysToWin": null
+  },
+  "pipelineVelocity": {
+   "status": 500,
+   "sqlError": "column lsh2.changed_at does not exist"
+  }
+ }
+}

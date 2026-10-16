@@ -1,0 +1,103 @@
+AUDIT_RESULT {
+ "mode": "restricted-db-role",
+ "crud.create": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"cf05be62-258d-4c58-9002-ffb88f789790\",\"tenant_id\":\"11c6c489-079d-4b2e-8aae-1aecda48bb1a\",\"name\":\"Auto-assign new leads\",\"description\":null,\"trigg"
+ },
+ "crud.list": {
+  "status": 200,
+  "body": "{\"data\":[]}"
+ },
+ "crud.patch": {
+  "status": 404,
+  "body": "{\"error\":\"Automation rule not found\"}"
+ },
+ "crud.executions": {
+  "status": 200,
+  "body": "{\"data\":[]}"
+ },
+ "crud.delete": {
+  "status": 404,
+  "body": "{\"error\":\"Automation rule not found\"}"
+ },
+ "lead.created": 201,
+ "worker.eventConsumers": [],
+ "worker.jobHandlerTypes": [
+  "mail.send",
+  "leads.import",
+  "inbound.process"
+ ],
+ "db.domain_events.lead_created": 1,
+ "db.automation_executions": 0,
+ "db.automation_rules.run_count": [
+  {
+   "name": "Auto-assign new leads",
+   "status": "active",
+   "run_count": 0,
+   "last_run_at": null
+  },
+  {
+   "name": "probe rule",
+   "status": "active",
+   "run_count": 0,
+   "last_run_at": null
+  }
+ ],
+ "db.tasks_created_by_rule": 0,
+ "db.jobs_for_automation": 0,
+ "validate.unknownActionType": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"78b17f13-fa73-4f7c-8c37-329ebe55cbd1\",\"tenant_id\":\"11c6c489-079d-4b2e-8aae-1aecda48bb1a\",\"name\":\"x\",\"description\":null,\"trigger_type\":\"lead_creat"
+ },
+ "validate.selfTriggeringRule(stage change → stage change)": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"affc5e18-0b94-4514-b524-2c53ebfec925\",\"tenant_id\":\"11c6c489-079d-4b2e-8aae-1aecda48bb1a\",\"name\":\"loop\",\"description\":null,\"trigger_type\":\"lead_st"
+ },
+ "validate.500actions": {
+  "status": 201,
+  "body": "{\"data\":{\"id\":\"3d707e57-93c8-43e0-9ffe-412d2561145e\",\"tenant_id\":\"11c6c489-079d-4b2e-8aae-1aecda48bb1a\",\"name\":\"big\",\"description\":null,\"trigger_type\":\"lead_cre"
+ },
+ "roles": {
+  "sales_manager": {
+   "POST /api/automation": 201,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "marketing_manager": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "sales_agent": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "auditor": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  },
+  "executive_readonly": {
+   "POST /api/automation": 403,
+   "PATCH /api/tenant/config (what the UI uses)": 403
+  }
+ },
+ "crosstenant": {
+  "patch": 404,
+  "delete": 404,
+  "executions": {
+   "status": 200,
+   "body": "{\"data\":[]}"
+  },
+  "list": {
+   "status": 200,
+   "body": "{\"data\":[]}"
+  },
+  "status_after": "active"
+ },
+ "ui.lostUpdate.finalRules": [
+  "UI rule B"
+ ],
+ "ui.rulesTableRowsForUiRules": 0,
+ "ui.settingsAcceptsAnyShape": {
+  "status": 200,
+  "body": "{\"data\":{\"id\":\"11c6c489-079d-4b2e-8aae-1aecda48bb1a\",\"name\":\"Audit A\",\"slug\":\"main\",\"is_active\":true,\"settings\":{\"x\":{\"deep\":{\"deeper\":1}},\"automation_rules\":\"n"
+ }
+}

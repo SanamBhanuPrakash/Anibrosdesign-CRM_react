@@ -1,0 +1,11 @@
+[functions.webhook-ingestion]
+verify_jwt = false
+
+[functions.process-webhooks]
+verify_jwt = false
+
+[functions.process-outbox]
+verify_jwt = false
+
+[functions.integration-status]
+verify_jwt = false

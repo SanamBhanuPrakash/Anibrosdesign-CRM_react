@@ -1,0 +1,359 @@
+{
+  "frontend_dependencies": {
+    "src/components/auth/AuthProvider.tsx": [
+      "auth",
+      "rpc"
+    ],
+    "src/components/auth/ProtectedRoute.tsx": [
+      "auth",
+      "rpc"
+    ],
+    "src/hooks/use-realtime-leads.ts": [
+      "supabase_import",
+      "rpc",
+      "realtime"
+    ],
+    "src/hooks/use-realtime-sync.ts": [
+      "supabase_import",
+      "realtime"
+    ],
+    "src/hooks/use-tenant-data.ts": [
+      "table_query"
+    ],
+    "src/lib/supabase.ts": [
+      "supabase_import"
+    ],
+    "src/lib/telemetry.ts": [
+      "table_query",
+      "rpc"
+    ],
+    "src/pages/AttributionPage.tsx": [
+      "rpc"
+    ],
+    "src/pages/DashboardPage.tsx": [
+      "rpc"
+    ],
+    "src/pages/PipelinePage.tsx": [
+      "rpc"
+    ],
+    "src/pages/TasksPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/auth/ForgotPasswordPage.tsx": [
+      "auth"
+    ],
+    "src/pages/auth/ResetPasswordPage.tsx": [
+      "auth"
+    ],
+    "src/pages/auth/SignInPage.tsx": [
+      "auth"
+    ],
+    "src/pages/auth/SignUpPage.tsx": [
+      "auth"
+    ],
+    "src/pages/integrations/IntegrationsPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/integrations/OutboxDiagnosticsPage.tsx": [
+      "rpc"
+    ],
+    "src/pages/integrations/WebhookDiagnosticsPage.tsx": [
+      "rpc"
+    ],
+    "src/pages/leads/LeadDetailPage.tsx": [
+      "auth",
+      "table_query",
+      "rpc"
+    ],
+    "src/pages/leads/LeadsPage.tsx": [
+      "table_query",
+      "rpc"
+    ],
+    "src/pages/operations/OperationsCenterPage.tsx": [
+      "table_query",
+      "rpc",
+      "edge_function"
+    ],
+    "src/pages/projects/ProjectsPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/properties/PropertiesPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/properties/PropertyDetailPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/settings/AutomationRulesPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/settings/CustomFieldsPage.tsx": [
+      "table_query"
+    ],
+    "src/pages/settings/SettingsPage.tsx": [
+      "rpc"
+    ],
+    "src/stores/auth-store.ts": [
+      "supabase_import",
+      "auth"
+    ],
+    "src/stores/notification-store.ts": [
+      "rpc"
+    ]
+  },
+  "migrations": [
+    {
+      "file": "20261009100000_001_organisation_tenant_hierarchy.sql",
+      "path": "supabase/migrations/20261009100000_001_organisation_tenant_hierarchy.sql",
+      "has_auth_users": true,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": true
+    },
+    {
+      "file": "20261009100411_002_crm_domain_tables.sql",
+      "path": "supabase/migrations/20261009100411_002_crm_domain_tables.sql",
+      "has_auth_users": true,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": true
+    },
+    {
+      "file": "20261009100457_003_seed_pipeline_and_transition_function.sql",
+      "path": "supabase/migrations/20261009100457_003_seed_pipeline_and_transition_function.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009101645_004_fix_security_advisor_warnings.sql",
+      "path": "supabase/migrations/20261009101645_004_fix_security_advisor_warnings.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009101705_005_fix_function_grants.sql",
+      "path": "supabase/migrations/20261009101705_005_fix_function_grants.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009101859_006_auto_onboarding_function.sql",
+      "path": "supabase/migrations/20261009101859_006_auto_onboarding_function.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009102424_007_lead_scoring_function.sql",
+      "path": "supabase/migrations/20261009102424_007_lead_scoring_function.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009104548_008_integrations_consent_customfields_automation_subscriptions.sql",
+      "path": "supabase/migrations/20261009104548_008_integrations_consent_customfields_automation_subscriptions.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": false,
+      "has_rls": true
+    },
+    {
+      "file": "20261009104755_009_user_invitation_function.sql",
+      "path": "supabase/migrations/20261009104755_009_user_invitation_function.sql",
+      "has_auth_users": true,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009111840_010_role_based_permission_enforcement.sql",
+      "path": "supabase/migrations/20261009111840_010_role_based_permission_enforcement.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009112139_011_database_integrity_composite_fks.sql",
+      "path": "supabase/migrations/20261009112139_011_database_integrity_composite_fks.sql",
+      "has_auth_users": false,
+      "has_auth_uid": false,
+      "has_security_definer": false,
+      "has_rls": false
+    },
+    {
+      "file": "20261009113347_012_stuck_job_recovery.sql",
+      "path": "supabase/migrations/20261009113347_012_stuck_job_recovery.sql",
+      "has_auth_users": false,
+      "has_auth_uid": false,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009115052_013_fix_anon_security_definer_execute.sql",
+      "path": "supabase/migrations/20261009115052_013_fix_anon_security_definer_execute.sql",
+      "has_auth_users": false,
+      "has_auth_uid": false,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009115301_014_automation_rule_execution_engine.sql",
+      "path": "supabase/migrations/20261009115301_014_automation_rule_execution_engine.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261009115824_015_outbox_event_generation_on_stage_transition.sql",
+      "path": "supabase/migrations/20261009115824_015_outbox_event_generation_on_stage_transition.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261011130253_016_fix_rls_recursion_tenant_memberships.sql",
+      "path": "supabase/migrations/20261011130253_016_fix_rls_recursion_tenant_memberships.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261011131104_017_dashboard_stats_function.sql",
+      "path": "supabase/migrations/20261011131104_017_dashboard_stats_function.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261011131647_018_attribution_stats_function.sql",
+      "path": "supabase/migrations/20261011131647_018_attribution_stats_function.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261011131711_018_attribution_stats_function_fix.sql",
+      "path": "supabase/migrations/20261011131711_018_attribution_stats_function_fix.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261011173839_019_operations_center_observability.sql",
+      "path": "supabase/migrations/20261011173839_019_operations_center_observability.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": true
+    },
+    {
+      "file": "20261012041810_020_harden_audit_logs_insert_policy.sql",
+      "path": "supabase/migrations/20261012041810_020_harden_audit_logs_insert_policy.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261012053000_021_leads_search_rpc.sql",
+      "path": "supabase/migrations/20261012053000_021_leads_search_rpc.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261012061500_022_atomic_viewing_scheduling_rpc.sql",
+      "path": "supabase/migrations/20261012061500_022_atomic_viewing_scheduling_rpc.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261012070000_023_client_telemetry_rpc.sql",
+      "path": "supabase/migrations/20261012070000_023_client_telemetry_rpc.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "20261012073000_024_enable_realtime_publications.sql",
+      "path": "supabase/migrations/20261012073000_024_enable_realtime_publications.sql",
+      "has_auth_users": false,
+      "has_auth_uid": false,
+      "has_security_definer": false,
+      "has_rls": false
+    },
+    {
+      "file": "20261012133000_025_notifications_system.sql",
+      "path": "supabase/migrations/20261012133000_025_notifications_system.sql",
+      "has_auth_users": true,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": true
+    },
+    {
+      "file": "20261012170000_026_reconcile_p0_database_contracts_and_security.sql",
+      "path": "supabase/migrations/20261012170000_026_reconcile_p0_database_contracts_and_security.sql",
+      "has_auth_users": true,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": true
+    },
+    {
+      "file": "DEPLOY_MIGRATIONS_021_TO_024.sql",
+      "path": "supabase/migrations/DEPLOY_MIGRATIONS_021_TO_024.sql",
+      "has_auth_users": false,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": false
+    },
+    {
+      "file": "DEPLOY_MIGRATIONS_021_TO_025.sql",
+      "path": "supabase/migrations/DEPLOY_MIGRATIONS_021_TO_025.sql",
+      "has_auth_users": true,
+      "has_auth_uid": true,
+      "has_security_definer": true,
+      "has_rls": true
+    }
+  ],
+  "edge_functions": [
+    {
+      "name": "integration-status",
+      "path": "supabase/functions/integration-status/index.ts",
+      "length": 13422
+    },
+    {
+      "name": "process-outbox",
+      "path": "supabase/functions/process-outbox/index.ts",
+      "length": 18993
+    },
+    {
+      "name": "process-webhooks",
+      "path": "supabase/functions/process-webhooks/index.ts",
+      "length": 14853
+    },
+    {
+      "name": "webhook-ingestion",
+      "path": "supabase/functions/webhook-ingestion/index.ts",
+      "length": 12172
+    }
+  ]
+}

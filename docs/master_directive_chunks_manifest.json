@@ -1,0 +1,148 @@
+{
+  "source_file": "docs/MASTER_ENGINEERING_DIRECTIVE.md",
+  "source_sha256": "de10296e09c49ea39593cc4de68487377b5d07c4ca565240574dda46e873833e",
+  "source_char_count": 68340,
+  "source_byte_count": 68452,
+  "source_line_count": 1229,
+  "total_chunks": 7,
+  "chunks": [
+    {
+      "sequence_number": 1,
+      "start_offset": 0,
+      "end_offset": 10988,
+      "start_line": 1,
+      "end_line": 207,
+      "char_count": 10988,
+      "byte_count": 11016,
+      "sha256": "f1d501bc6bf39812c2ea3b92489bc0922c711ce8881303e6be32089085b4c5f0",
+      "headings": [
+        "# ANIBROS CRM \u2014 MASTER DIRECTIVE INTAKE, FULL-CONTEXT COMPREHENSION AND REQUIREMENT TRACEABILITY GATE",
+        "## PURPOSE",
+        "## 1. INPUT PROTOCOL \u2014 DO NOT LOSE PART OF THE SOURCE",
+        "## 2. PRESERVE THE DIRECTIVE VERBATIM",
+        "## 3. USE PYTHON FOR SYSTEMATIC CHUNKING WHEN NEEDED",
+        "## 4. READ IN MULTIPLE PASSES",
+        "## 5. BUILD THE REQUIREMENT TRACEABILITY SYSTEM"
+      ]
+    },
+    {
+      "sequence_number": 2,
+      "start_offset": 10988,
+      "end_offset": 22023,
+      "start_line": 207,
+      "end_line": 375,
+      "char_count": 11035,
+      "byte_count": 11061,
+      "sha256": "ea192622e95b4d42602046c5ed3cb33a6e2c15f277e5270519f0ec49aef5746a",
+      "headings": [
+        "## 6. READ THE CODEBASE AGAINST THE SPECIFICATION",
+        "## 7. NO PREMATURE IMPLEMENTATION OR SUMMARY-ONLY RESPONSE",
+        "## 8. IMPLEMENTATION GOVERNANCE",
+        "## 9. FIRST RESPONSE AFTER THE COMPLETE DIRECTIVE ARRIVES",
+        "# ANIBROS CRM \u2014 48-HOUR RELEASE MODE",
+        "## Mission",
+        "## 1. Establish the exact baseline first",
+        "## 2. Immediate P0 blockers",
+        "## 3. Complete the real core CRM workflow",
+        "## 4. Prove tenant and role boundaries",
+        "## 5. Verify external integrations honestly",
+        "## 6. Tests and release gates"
+      ]
+    },
+    {
+      "sequence_number": 3,
+      "start_offset": 22023,
+      "end_offset": 33386,
+      "start_line": 375,
+      "end_line": 547,
+      "char_count": 11363,
+      "byte_count": 11391,
+      "sha256": "758dd928dc6f5abf598cad44f450f9883beeef3042cc8c0ada0405a60ba3e7f3",
+      "headings": [
+        "## 7. Delivery protocol",
+        "## 8. Stop conditions",
+        "## First response and execution",
+        "# ANIBROS CRM \u2014 REMOVE SUPABASE COMPLETELY AND MIGRATE TO NATIVE POSTGRESQL",
+        "## 1. Final architecture decision \u2014 do not reinterpret",
+        "## 2. Preserve the existing project",
+        "## 3. Phase 0 \u2014 map every Supabase dependency",
+        "## 4. Phase 1 \u2014 design our native PostgreSQL backend",
+        "## 5. Phase 2 \u2014 recover and port the database schema",
+        "## 6. Phase 3 \u2014 replace frontend and backend calls",
+        "## 7. Phase 4 \u2014 local and production parity",
+        "## 8. Phase 5 \u2014 verification and release gates"
+      ]
+    },
+    {
+      "sequence_number": 4,
+      "start_offset": 33386,
+      "end_offset": 41437,
+      "start_line": 547,
+      "end_line": 698,
+      "char_count": 8051,
+      "byte_count": 8053,
+      "sha256": "75b32f185128990a6060187641482a2364dc148960f2bba4b8d08927e4577475",
+      "headings": [
+        "## 9. Execution order and deliverables",
+        "# ANIBROS CRM \u2014 PRINCIPAL ARCHITECTURE, NATIVE POSTGRESQL, SECURITY AND PRODUCTION ENGINEERING MASTER DIRECTIVE",
+        "## 0. Mission and non-negotiable decisions",
+        "## 1. Engineering standards and design principles",
+        "## 2. Phase zero: establish repository and environment truth",
+        "## 3. Architecture and system design deliverables"
+      ]
+    },
+    {
+      "sequence_number": 5,
+      "start_offset": 41437,
+      "end_offset": 52673,
+      "start_line": 698,
+      "end_line": 904,
+      "char_count": 11236,
+      "byte_count": 11240,
+      "sha256": "27f554920d5ba9eea99d99679bcddf13c360d09aa30eb729b51593f9aedf102e",
+      "headings": [
+        "## 4. Native PostgreSQL database architecture",
+        "## 5. Authentication and authorization architecture",
+        "## 6. Application security and threat modelling",
+        "## 7. Layered encryption and key management"
+      ]
+    },
+    {
+      "sequence_number": 6,
+      "start_offset": 52673,
+      "end_offset": 64069,
+      "start_line": 904,
+      "end_line": 1149,
+      "char_count": 11396,
+      "byte_count": 11400,
+      "sha256": "2dad372f5e03ecc4af36b95ab087b98da86a72e78fc026f637174e6d8a2c5e0b",
+      "headings": [
+        "## 8. Multi-tenant access-control design",
+        "## 9. Webhooks, queues and background workers",
+        "## 10. Logging, audit, observability and incident response",
+        "## 11. Backup, restore and disaster recovery",
+        "## 12. Performance, scalability and capacity planning",
+        "## 13. API and application architecture",
+        "## 14. Reliability and operational engineering",
+        "## 15. Supply chain and CI/CD",
+        "## 16. Complete existing CRM workflows"
+      ]
+    },
+    {
+      "sequence_number": 7,
+      "start_offset": 64069,
+      "end_offset": 68340,
+      "start_line": 1149,
+      "end_line": 1229,
+      "char_count": 4271,
+      "byte_count": 4291,
+      "sha256": "f18a2e3123b11bf6e7cc27bfecf8fded2b89233ec456de0d2f47c2eac721deb6",
+      "headings": [
+        "## 17. Required security and functional tests",
+        "## 18. Local PostgreSQL and future production parity",
+        "## 19. Delivery process and definition of done",
+        "## 20. Immediate action"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+AUDIT_RESULT {
+ "legacy invite: existing user (other workspace) → added at once, any role": {
+  "status": 201,
+  "msg": "Member added to workspace"
+ },
+ "legacy invite: unknown address → different message (user enumeration)": {
+  "status": 201,
+  "msg": "Invitation recorded for pending signup"
+ },
+ "membership row created for the stranger without any acceptance": [
+  {
+   "role": "sales_manager",
+   "status": "active"
+  }
+ ],
+ "mail jobs queued by the legacy invite": 0,
+ "audit rows written by the legacy invite": 0,
+ "legacy revoke race (two owners revoke each other) → statuses": [
+  200,
+  403
+ ],
+ "active owners left after the race (v1 guarantees ≥ 1)": 1,
+ "revoked member: request right after legacy revoke": {
+  "before": 200,
+  "after": 403
+ },
+ "role change mid-session: agent → marketing_manager → revoked": [
+  403,
+  200,
+  403
+ ],
+ "other workspace owner sends X-Tenant-Id of A": {
+  "status": 403,
+  "msg": "You are not a member of the requested workspace"
+ }
+}

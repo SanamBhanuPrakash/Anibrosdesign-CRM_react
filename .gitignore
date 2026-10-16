@@ -1,0 +1,50 @@
+# Dependency and Build directories
+node_modules/
+dist/
+dist-ssr/
+
+# Environment files & Secrets
+.env
+.env*
+!.env.example
+!.env.native.example
+*.pem
+*.key
+*.cert
+
+# Logs and debug output
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tooling / runtime caches
+.bolt/
+.gemini/
+coverage/
+supabase/.temp/
+*.tmp
+
+# uploaded files (dev) — anchored to the repository root so the source folder server/src/platform/storage/ stays tracked
+/storage/
+
+# Supabase CLI state files (retired runtime) and archived scripts that embed retired Supabase anon keys (already in git history)
+archive/**/.temp/
+archive/supabase-era/scripts/test_live_realtime_connection.mjs
+archive/supabase-era/scripts/test_p0_contract_remediation.mjs
+archive/supabase-era/scripts/verify_live_supabase_deployment.mjs

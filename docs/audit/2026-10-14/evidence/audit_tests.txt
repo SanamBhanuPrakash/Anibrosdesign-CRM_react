@@ -1,0 +1,857 @@
+
+ RUN  v2.1.9 D:/work/Xampp/htdocs/Anibros CRM/project-bolt-sb1-s2qdvawq_v2/project
+
+stderr | server/src/tests/leads.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/leads.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/leads.test.ts > pipelines > manages pipelines and stages with invariants (admins only)
+
+stderr | server/src/tests/leads.test.ts > pipelines > manages pipelines and stages with invariants (admins only)
+
+stderr | server/src/tests/leads.test.ts > pipelines > manages pipelines and stages with invariants (admins only)
+
+stderr | server/src/tests/leads.test.ts > pipelines > manages pipelines and stages with invariants (admins only)
+
+stderr | server/src/tests/leads.test.ts > pipelines > manages pipelines and stages with invariants (admins only)
+
+stderr | server/src/tests/leads.test.ts > pipelines > manages pipelines and stages with invariants (admins only)
+
+stderr | server/src/tests/leads.test.ts > pipelines > refuses to remove a stage that has leads unless they are moved, and records the move
+
+stderr | server/src/tests/leads.test.ts > pipelines > transition matrix: unrestricted by default, then restricted with required fields
+
+stderr | server/src/tests/leads.test.ts > pipelines > transition matrix: unrestricted by default, then restricted with required fields
+
+stderr | server/src/tests/leads.test.ts > pipelines > transition matrix: unrestricted by default, then restricted with required fields
+
+stderr | server/src/tests/leads.test.ts > seeded real-estate pipeline rules > enforces the seeded transition matrix, but a closed lead can always be reopened
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > validates input and refuses a second open lead for the same contact (unless explicitly allowed)
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > validates input and refuses a second open lead for the same contact (unless explicitly allowed)
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > validates input and refuses a second open lead for the same contact (unless explicitly allowed)
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > validates input and refuses a second open lead for the same contact (unless explicitly allowed)
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: create, read, scope > sales agents see and touch only their own leads; managers see all; auditors none; other workspaces nothing
+
+stderr | server/src/tests/leads.test.ts > leads: update, stage, assignment > updates with If-Match, recomputes the score and keeps unrelated fields
+
+stderr | server/src/tests/leads.test.ts > leads: update, stage, assignment > moves between stages: status, closed_at, history, activity, events — and reopening
+
+stderr | server/src/tests/leads.test.ts > leads: update, stage, assignment > assigns and unassigns (managers only) and rejects non-members
+
+stderr | server/src/tests/leads.test.ts > leads: update, stage, assignment > archives and restores
+
+stderr | server/src/tests/leads.test.ts > leads: list, filters, pagination > filters by text, status, state, source, tag, owner, score and follow-up
+
+stderr | server/src/tests/leads.test.ts > leads: list, filters, pagination > filters by text, status, state, source, tag, owner, score and follow-up
+
+stderr | server/src/tests/leads.test.ts > leads: list, filters, pagination > sorts and pages with stable keyset cursors for every sort and order
+
+stderr | server/src/tests/leads.test.ts > leads: activities, first response and SLA > rejects empty text, future timestamps and activities on leads you cannot see
+
+stderr | server/src/tests/leads.test.ts > leads: activities, first response and SLA > rejects empty text, future timestamps and activities on leads you cannot see
+
+stderr | server/src/tests/leads.test.ts > leads: activities, first response and SLA > rejects empty text, future timestamps and activities on leads you cannot see
+
+stderr | server/src/tests/leads.test.ts > leads: activities, first response and SLA > rejects empty text, future timestamps and activities on leads you cannot see
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > bulk assign / tag / move / archive: each lead is handled on its own, failures are reported not hidden
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > bulk assign / tag / move / archive: each lead is handled on its own, failures are reported not hidden
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > exports CSV with the same filters, neutralises formulas, audits, and refuses roles without export
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > saved views: private by default, shareable by managers, editable only by their owner
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > saved views: private by default, shareable by managers, editable only by their owner
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > saved views: private by default, shareable by managers, editable only by their owner
+
+stderr | server/src/tests/leads.test.ts > leads: bulk, export, saved views > saved views: private by default, shareable by managers, editable only by their owner
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > imports asynchronously: creates leads, matches existing people, reports row errors, skips duplicates
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > rejects files it cannot understand with a helpful message, and enforces permissions and isolation
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > rejects files it cannot understand with a helpful message, and enforces permissions and isolation
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > rejects files it cannot understand with a helpful message, and enforces permissions and isolation
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > rejects files it cannot understand with a helpful message, and enforces permissions and isolation
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > rejects files it cannot understand with a helpful message, and enforces permissions and isolation
+
+stderr | server/src/tests/leads.test.ts > leads: CSV import (worker) > rejects files it cannot understand with a helpful message, and enforces permissions and isolation
+
+ ✓ server/src/tests/leads.test.ts (30 tests) 11772ms
+   ✓ leads: update, stage, assignment > balanced assignment spreads new leads across the least-loaded agents, even under concurrency 389ms
+   ✓ leads: list, filters, pagination > sorts and pages with stable keyset cursors for every sort and order 422ms
+   ✓ leads: bulk, export, saved views > bulk assign / tag / move / archive: each lead is handled on its own, failures are reported not hidden 511ms
+   ✓ leads: CSV import (worker) > imports asynchronously: creates leads, matches existing people, reports row errors, skips duplicates 331ms
+   ✓ leads: CSV import (worker) > can be re-run safely: a retried job resumes after the last committed batch and never double-creates 5503ms
+stderr | server/src/tests/inbound.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/inbound.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > Meta needs the app secret; it is never returned; a verify token is generated
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > role matrix: marketing manager manages, executive only reads the list, agent has no access, other workspace sees nothing
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > validates routing config against THIS workspace
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > validates routing config against THIS workspace
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > validates routing config against THIS workspace
+
+stderr | server/src/tests/inbound.test.ts > managing lead sources > validates routing config against THIS workspace
+
+stderr | server/src/tests/inbound.test.ts > Google Ads lead forms > a wrong or missing key is refused (401), nothing is stored
+
+stderr | server/src/tests/inbound.test.ts > Google Ads lead forms > a wrong or missing key is refused (401), nothing is stored
+
+stderr | server/src/tests/inbound.test.ts > Google Ads lead forms > a wrong or missing key is refused (401), nothing is stored
+
+stderr | server/src/tests/inbound.test.ts > Google Ads lead forms > a submission with nobody to contact goes to review with a reason; it can be ignored, not retried into nothing
+
+stderr | server/src/tests/inbound.test.ts > Google Ads lead forms > rotating the secret cuts the old one off at once
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > answers Meta’s subscription handshake only with the right verify token
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > answers Meta’s subscription handshake only with the right verify token
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > answers Meta’s subscription handshake only with the right verify token
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > refuses a bad, missing or body-tampered signature (401) and stores nothing
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > refuses a bad, missing or body-tampered signature (401) and stores nothing
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > refuses a bad, missing or body-tampered signature (401) and stores nothing
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > a temporary Meta outage is retried, not turned into a failure
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > cannot rotate a Meta secret (it is yours); can replace it
+
+stderr | server/src/tests/inbound.test.ts > Meta Lead Ads > cannot rotate a Meta secret (it is yours); can replace it
+
+stderr | server/src/tests/inbound.test.ts > generic signed JSON > rejects tampering, the wrong secret and stale timestamps (replay protection)
+
+stderr | server/src/tests/inbound.test.ts > generic signed JSON > rejects tampering, the wrong secret and stale timestamps (replay protection)
+
+stderr | server/src/tests/inbound.test.ts > generic signed JSON > rejects tampering, the wrong secret and stale timestamps (replay protection)
+
+stderr | server/src/tests/inbound.test.ts > generic signed JSON > oversized bodies are refused before any database work
+
+stderr | server/src/tests/inbound.test.ts > website form > refuses other websites (403) and silently drops bot submissions (honeypot)
+
+stderr | server/src/tests/inbound.test.ts > website form > is rate limited per visitor
+
+stderr | server/src/tests/inbound.test.ts > website form > is rate limited per visitor
+
+stderr | server/src/tests/inbound.test.ts > website form > is rate limited per visitor
+
+stderr | server/src/tests/inbound.test.ts > website form > is rate limited per visitor
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > a paused source answers 503 + Retry-After so providers retry later; resuming accepts again
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > a deleted source and unknown or malformed ids all look the same: 404
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > a deleted source and unknown or malformed ids all look the same: 404
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > a deleted source and unknown or malformed ids all look the same: 404
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > a deleted source and unknown or malformed ids all look the same: 404
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > retry/ignore on another workspace’s delivery is a 404-equivalent (nothing changes)
+
+stderr | server/src/tests/inbound.test.ts > pausing, deleting, test button, isolation and database guarantees > suspended workspaces stop receiving (the lookup hides their endpoints)
+
+ ✓ server/src/tests/inbound.test.ts (36 tests) 3588ms
+   ✓ pausing, deleting, test button, isolation and database guarantees > Send test lead runs the real pipeline for every provider and tags the lead 736ms
+stderr | server/src/tests/inventory.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/inventory.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/inventory.test.ts > projects > creates, rejects duplicate names (any case), validates and carries live availability counts
+
+stderr | server/src/tests/inventory.test.ts > projects > creates, rejects duplicate names (any case), validates and carries live availability counts
+
+stderr | server/src/tests/inventory.test.ts > projects > creates, rejects duplicate names (any case), validates and carries live availability counts
+
+stderr | server/src/tests/inventory.test.ts > projects > creates, rejects duplicate names (any case), validates and carries live availability counts
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > roles: agents read, managers write, auditors are blocked; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > projects > If-Match works, and a project with properties cannot be archived
+
+stderr | server/src/tests/inventory.test.ts > projects > If-Match works, and a project with properties cannot be archived
+
+stderr | server/src/tests/inventory.test.ts > projects > If-Match works, and a project with properties cannot be archived
+
+(node:24896) DeprecationWarning: Calling client.query() when the client is already executing a query is deprecated and will be removed in pg@9.0. Use async/await or an external async flow control mechanism instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > validates input with field paths
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > a unit exists once per project and tower; the same number elsewhere is fine; archiving frees it
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > a unit exists once per project and tower; the same number elsewhere is fine; archiving frees it
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > a unit exists once per project and tower; the same number elsewhere is fine; archiving frees it
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > price changes land in the price history (trigger), with who and when; ETag guards edits
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: create, validation, uniqueness, history > roles: agents read only; managers manage; only admins archive; other workspaces see nothing
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > follows the allowed moves, keeps a reasoned history, and refuses nonsense
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > follows the allowed moves, keeps a reasoned history, and refuses nonsense
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > follows the allowed moves, keeps a reasoned history, and refuses nonsense
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > follows the allowed moves, keeps a reasoned history, and refuses nonsense
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > follows the allowed moves, keeps a reasoned history, and refuses nonsense
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > sold is for sale listings and rented for rent/lease; the listing type cannot contradict a closed deal
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > sold is for sale listings and rented for rent/lease; the listing type cannot contradict a closed deal
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > sold is for sale listings and rented for rent/lease; the listing type cannot contradict a closed deal
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > sold is for sale listings and rented for rent/lease; the listing type cannot contradict a closed deal
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > concurrent status changes are serialised: exactly one wins and the history stays consistent
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > concurrent status changes are serialised: exactly one wins and the history stays consistent
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > concurrent status changes are serialised: exactly one wins and the history stays consistent
+
+stderr | server/src/tests/inventory.test.ts > properties: availability state machine > archive and restore
+
+stderr | server/src/tests/inventory.test.ts > properties: list, filters, summary > filters by text, status, type, listing, bedrooms, price/area range, place, tag and project
+
+stderr | server/src/tests/inventory.test.ts > properties: list, filters, summary > filters by text, status, type, listing, bedrooms, price/area range, place, tag and project
+
+stderr | server/src/tests/inventory.test.ts > properties: list, filters, summary > sorts and pages with stable cursors for every sort and order
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > uploads by content, makes the first picture the cover, serves it back with safe headers and cheap revalidation
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > uploads by content, makes the first picture the cover, serves it back with safe headers and cheap revalidation
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > trusts the bytes: spoofed, mismatched, empty, oversized and duplicate uploads are refused and leave nothing behind
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > trusts the bytes: spoofed, mismatched, empty, oversized and duplicate uploads are refused and leave nothing behind
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > trusts the bytes: spoofed, mismatched, empty, oversized and duplicate uploads are refused and leave nothing behind
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > trusts the bytes: spoofed, mismatched, empty, oversized and duplicate uploads are refused and leave nothing behind
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > trusts the bytes: spoofed, mismatched, empty, oversized and duplicate uploads are refused and leave nothing behind
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > trusts the bytes: spoofed, mismatched, empty, oversized and duplicate uploads are refused and leave nothing behind
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > the antivirus hook can veto an upload
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > access follows the property: agents can view but not change; auditors and other workspaces get nothing
+
+stderr | server/src/tests/inventory.test.ts > files: pictures and documents > a file whose bytes vanished from storage is reported as missing, not as a server error
+
+ ✓ server/src/tests/inventory.test.ts (24 tests) 3385ms
+   ✓ projects > creates, rejects duplicate names (any case), validates and carries live availability counts 420ms
+stderr | server/src/tests/tasks.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/tasks.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: create, read, validation > validates input with field paths
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents see tasks assigned to or created by them; others do not exist for them; auditors are blocked
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents see tasks assigned to or created by them; others do not exist for them; auditors are blocked
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents see tasks assigned to or created by them; others do not exist for them; auditors are blocked
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents see tasks assigned to or created by them; others do not exist for them; auditors are blocked
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents see tasks assigned to or created by them; others do not exist for them; auditors are blocked
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > only managers assign to others, and only active members; agents cannot delete
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > only managers assign to others, and only active members; agents cannot delete
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > only managers assign to others, and only active members; agents cannot delete
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > only managers assign to others, and only active members; agents cannot delete
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents can only attach tasks to leads they can see; other workspaces see nothing
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents can only attach tasks to leads they can see; other workspaces see nothing
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents can only attach tasks to leads they can see; other workspaces see nothing
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents can only attach tasks to leads they can see; other workspaces see nothing
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents can only attach tasks to leads they can see; other workspaces see nothing
+
+stderr | server/src/tests/tasks.test.ts > tasks: access control > agents can only attach tasks to leads they can see; other workspaces see nothing
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > updates with If-Match; finished tasks cannot be edited until reopened
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > updates with If-Match; finished tasks cannot be edited until reopened
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > updates with If-Match; finished tasks cannot be edited until reopened
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > updates with If-Match; finished tasks cannot be edited until reopened
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > completing a recurring task creates exactly one next occurrence, even with parallel clicks
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > cancel, delete and the audit trail
+
+stderr | server/src/tests/tasks.test.ts > tasks: lifecycle > bulk complete / reassign / cancel: each task on its own, with reasons for the ones that fail
+
+stderr | server/src/tests/tasks.test.ts > tasks: list, filters, summary > filters by state, due window, priority, kind and text
+
+stderr | server/src/tests/tasks.test.ts > tasks: list, filters, summary > sorts by due (undated last), priority and creation, and pages with stable cursors
+
+ ✓ server/src/tests/tasks.test.ts (22 tests) 2860ms
+stderr | server/src/tests/platform-db.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/platform-db.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > domain events (transactional outbox + cursor dispatcher) > a failing consumer does not advance its cursor (event is retried, not lost)
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > retries transient failures, then succeeds
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > retries transient failures, then succeeds
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > dead-letters permanent errors immediately and exhausted retries after max_attempts
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > dead-letters permanent errors immediately and exhausted retries after max_attempts
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > a crashed worker’s job is recovered by the reaper; the stale worker cannot overwrite the new owner
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > a crashed worker’s job is recovered by the reaper; the stale worker cannot overwrite the new owner
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > a worker that keeps dying eventually dead-letters the job (no infinite poison loop)
+
+stderr | server/src/tests/platform-db.test.ts > platform: database access layer, RLS, events, jobs > job queue (leases, retries, dead-letter) > a worker that keeps dying eventually dead-letters the job (no infinite poison loop)
+
+ ✓ server/src/tests/platform-db.test.ts (30 tests) 1709ms
+stderr | server/src/tests/identity.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/identity.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > rejects weak passwords with field-level errors and a requestId
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > rejects malformed input before any work is done
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > unverified users cannot sign in (403 EMAIL_NOT_VERIFIED) and cannot use the API
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > verification: sets HttpOnly SameSite=Lax session cookie; replay is rejected
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > concurrent use of ONE verification link yields exactly one success (atomic consume)
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > concurrent use of ONE verification link yields exactly one success (atomic consume)
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > concurrent use of ONE verification link yields exactly one success (atomic consume)
+
+stderr | server/src/tests/identity.test.ts > signup & email verification > concurrent use of ONE verification link yields exactly one success (atomic consume)
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > unauthenticated request → 401 problem+json
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > wrong password and unknown user are indistinguishable (same status + message)
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > wrong password and unknown user are indistinguishable (same status + message)
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > CSRF: cookie-authenticated mutation without the token is refused
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > CSRF: a request from a foreign Origin is refused even with valid cookies and token
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > logout revokes the session server-side
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > idle timeout: a session unused beyond the idle window is rejected
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > absolute timeout: an expired session is rejected
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > deactivating a user takes effect on the very next request
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > deactivating a user takes effect on the very next request
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > revoking the only membership locks the user out immediately
+
+stderr | server/src/tests/identity.test.ts > sign-in, session & CSRF > unknown routes return problem+json 404 (no HTML, no stack)
+
+stderr | server/src/tests/identity.test.ts > password reset & change > request is uniform for unknown emails; complete is single-use and revokes ALL sessions
+
+stderr | server/src/tests/identity.test.ts > password reset & change > request is uniform for unknown emails; complete is single-use and revokes ALL sessions
+
+stderr | server/src/tests/identity.test.ts > password reset & change > request is uniform for unknown emails; complete is single-use and revokes ALL sessions
+
+stderr | server/src/tests/identity.test.ts > password reset & change > request is uniform for unknown emails; complete is single-use and revokes ALL sessions
+
+stderr | server/src/tests/identity.test.ts > password reset & change > request is uniform for unknown emails; complete is single-use and revokes ALL sessions
+
+stderr | server/src/tests/identity.test.ts > password reset & change > request is uniform for unknown emails; complete is single-use and revokes ALL sessions
+
+stderr | server/src/tests/identity.test.ts > password reset & change > reset token is rejected when expired
+
+stderr | server/src/tests/identity.test.ts > password reset & change > change password: needs the current password, enforces policy, signs out other sessions only
+
+stderr | server/src/tests/identity.test.ts > password reset & change > change password: needs the current password, enforces policy, signs out other sessions only
+
+stderr | server/src/tests/identity.test.ts > password reset & change > change password: needs the current password, enforces policy, signs out other sessions only
+
+stderr | server/src/tests/identity.test.ts > sessions & workspaces > lists sessions, revokes one, signs out everywhere else
+
+stderr | server/src/tests/identity.test.ts > sessions & workspaces > lists sessions, revokes one, signs out everywhere else
+
+stderr | server/src/tests/identity.test.ts > sessions & workspaces > cannot revoke another user’s session (404, not 403)
+
+stderr | server/src/tests/identity.test.ts > sessions & workspaces > workspace switching is explicit, server-verified and persisted on the session
+
+stderr | server/src/tests/identity.test.ts > sessions & workspaces > workspace switching is explicit, server-verified and persisted on the session
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > setup → confirm → login requires a code; codes are single-use; recovery codes work once
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > setup → confirm → login requires a code; codes are single-use; recovery codes work once
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > setup → confirm → login requires a code; codes are single-use; recovery codes work once
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > setup → confirm → login requires a code; codes are single-use; recovery codes work once
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > setup → confirm → login requires a code; codes are single-use; recovery codes work once
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > disabling requires password + a valid code
+
+stderr | server/src/tests/identity.test.ts > multi-factor authentication (TOTP) > disabling requires password + a valid code
+
+ ✓ server/src/tests/identity.test.ts (33 tests) 2394ms
+stderr | server/src/tests/contacts.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/contacts.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > validates input with field paths
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > validates input with field paths
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > refuses duplicates by any spelling of the e-mail or phone and says who it clashes with
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > refuses duplicates by any spelling of the e-mail or phone and says who it clashes with
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > is race-safe: eight parallel creates with the same e-mail produce exactly one contact
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > is race-safe: eight parallel creates with the same e-mail produce exactly one contact
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > isolates tenants: same e-mail is fine elsewhere, ids from another workspace are 404
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > isolates tenants: same e-mail is fine elsewhere, ids from another workspace are 404
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > isolates tenants: same e-mail is fine elsewhere, ids from another workspace are 404
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > isolates tenants: same e-mail is fine elsewhere, ids from another workspace are 404
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > enforces roles: auditor blocked, agent limited to what they own and cannot delete or reassign
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > enforces roles: auditor blocked, agent limited to what they own and cannot delete or reassign
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > enforces roles: auditor blocked, agent limited to what they own and cannot delete or reassign
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > enforces roles: auditor blocked, agent limited to what they own and cannot delete or reassign
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > enforces roles: auditor blocked, agent limited to what they own and cannot delete or reassign
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > enforces roles: auditor blocked, agent limited to what they own and cannot delete or reassign
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > rejects an owner who is not a member of the workspace
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > updates with optimistic concurrency and keeps identifiers consistent
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > updates with optimistic concurrency and keeps identifiers consistent
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > updates with optimistic concurrency and keeps identifiers consistent
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > paginates with stable keyset cursors for every sort and rejects a cursor from another ordering
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > archives (freeing identifiers) and restores, refusing when an identifier was taken meanwhile
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > archives (freeing identifiers) and restores, refusing when an identifier was taken meanwhile
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > merges duplicates (data moves, nothing is overwritten) and can undo it
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > merges duplicates (data moves, nothing is overwritten) and can undo it
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > merge input is validated and concurrent merges of the same pair cannot both win
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > merge input is validated and concurrent merges of the same pair cannot both win
+
+stderr | server/src/tests/contacts.test.ts > contacts API (restricted DB role) > merge input is validated and concurrent merges of the same pair cannot both win
+
+ ✓ server/src/tests/contacts.test.ts (23 tests) 2377ms
+stderr | server/src/tests/access-control.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/access-control.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > permissions: agent sees the directory but not the member list; admin sees both
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > permissions: agent sees the directory but not the member list; admin sees both
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > privilege escalation: an admin cannot invite an owner or promote anyone to owner or touch an owner
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > privilege escalation: an admin cannot invite an owner or promote anyone to owner or touch an owner
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > privilege escalation: an admin cannot invite an owner or promote anyone to owner or touch an owner
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > privilege escalation: an admin cannot invite an owner or promote anyone to owner or touch an owner
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > privilege escalation: an admin cannot invite an owner or promote anyone to owner or touch an owner
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > an invitation can be accepted exactly once and cannot be replayed
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > an invitation can be accepted exactly once and cannot be replayed
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > expired / revoked invitations are rejected; preview reveals nothing for bad tokens
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > expired / revoked invitations are rejected; preview reveals nothing for bad tokens
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > expired / revoked invitations are rejected; preview reveals nothing for bad tokens
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > existing account: must be signed in as the invited address; a different signed-in user cannot hijack the link
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > existing account: must be signed in as the invited address; a different signed-in user cannot hijack the link
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > role change takes effect on the very next request
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > role change takes effect on the very next request
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > removal locks the member out immediately and is audited
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > the workspace always keeps one owner — even when two owners demote each other concurrently
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > the workspace always keeps one owner — even when two owners demote each other concurrently
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > the workspace always keeps one owner — even when two owners demote each other concurrently
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > cross-tenant: an owner cannot read or modify another workspace’s members
+
+stderr | server/src/tests/access-control.test.ts > members & invitations > cross-tenant: an owner cannot read or modify another workspace’s members
+
+stderr | server/src/tests/access-control.test.ts > API keys > create → plaintext shown once; list never exposes secrets; key authenticates within its scopes only
+
+stderr | server/src/tests/access-control.test.ts > API keys > create → plaintext shown once; list never exposes secrets; key authenticates within its scopes only
+
+stderr | server/src/tests/access-control.test.ts > API keys > wrong secret, malformed key, unknown prefix → 401 with the same shape
+
+stderr | server/src/tests/access-control.test.ts > API keys > wrong secret, malformed key, unknown prefix → 401 with the same shape
+
+stderr | server/src/tests/access-control.test.ts > API keys > wrong secret, malformed key, unknown prefix → 401 with the same shape
+
+stderr | server/src/tests/access-control.test.ts > API keys > wrong secret, malformed key, unknown prefix → 401 with the same shape
+
+stderr | server/src/tests/access-control.test.ts > API keys > revocation is immediate; expiry is enforced
+
+stderr | server/src/tests/access-control.test.ts > API keys > revocation is immediate; expiry is enforced
+
+stderr | server/src/tests/access-control.test.ts > API keys > nobody can mint a key more powerful than themselves
+
+stderr | server/src/tests/access-control.test.ts > API keys > nobody can mint a key more powerful than themselves
+
+stderr | server/src/tests/access-control.test.ts > API keys > nobody can mint a key more powerful than themselves
+
+stderr | server/src/tests/access-control.test.ts > API keys > nobody can mint a key more powerful than themselves
+
+stderr | server/src/tests/access-control.test.ts > API keys > nobody can mint a key more powerful than themselves
+
+stderr | server/src/tests/access-control.test.ts > API keys > nobody can mint a key more powerful than themselves
+
+stderr | server/src/tests/access-control.test.ts > API keys > Idempotency-Key: a retried create returns the SAME key once; reuse with a different body is rejected
+
+ ✓ server/src/tests/access-control.test.ts (18 tests) 2115ms
+stderr | server/src/tests/monitor.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/monitor.test.ts
+◇ injected env (0) from .env.native
+
+(node:26540) DeprecationWarning: Calling client.query() when the client is already executing a query is deprecated and will be removed in pg@9.0. Use async/await or an external async flow control mechanism instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+stderr | server/src/tests/monitor.test.ts > monitor: access control > owner and auditor can read; agent and executive cannot; another workspace sees only its own
+
+stderr | server/src/tests/monitor.test.ts > monitor: access control > owner and auditor can read; agent and executive cannot; another workspace sees only its own
+
+stderr | server/src/tests/monitor.test.ts > monitor: access control > owner and auditor can read; agent and executive cannot; another workspace sees only its own
+
+stderr | server/src/tests/monitor.test.ts > monitor: access control > owner and auditor can read; agent and executive cannot; another workspace sees only its own
+
+stderr | server/src/tests/monitor.test.ts > monitor: access control > owner and auditor can read; agent and executive cannot; another workspace sees only its own
+
+stderr | server/src/tests/monitor.test.ts > monitor: access control > owner and auditor can read; agent and executive cannot; another workspace sees only its own
+
+stderr | server/src/tests/monitor.test.ts > monitor: activity log > a permission denial in the API is recorded against the right workspace and person
+
+stderr | server/src/tests/monitor.test.ts > monitor: activity log > a refused lead delivery (bad signature) shows up as a security event
+
+stderr | server/src/tests/monitor.test.ts > monitor: audit trail > paginates without repeats
+
+stderr | server/src/tests/monitor.test.ts > monitor: audit trail > shows one entry with before/after and redacts secrets; other workspaces get 404
+
+stderr | server/src/tests/monitor.test.ts > monitor: audit trail > exports CSV (BOM, header, formula-safe) and records the export itself
+
+ ✓ server/src/tests/monitor.test.ts (19 tests) 1892ms
+stderr | server/src/tests/native-database-foundation.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/native-database-foundation.test.ts
+◇ injected env (0) from .env.native
+
+ ✓ server/src/tests/native-database-foundation.test.ts (8 tests) 511ms
+stderr | server/src/tests/api-crm-workflow.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/api-crm-workflow.test.ts
+◇ injected env (0) from .env.native
+
+stdout | server/src/tests/api-crm-workflow.test.ts > Legacy CRM API workflow suite > P0 - CRM Core Workflow & Cross-Tenant Boundary Security (C4, C5, C6, E1)
+Discovered stages for tenantA: [
+  {
+    id: '3c5b4a6e-dd96-4f0d-8282-4b8c484420e4',
+    stage_key: 'new',
+    name: 'New'
+  },
+  {
+    id: '09646b26-3571-440c-9da7-e6a5568b0236',
+    stage_key: 'contact_attempted',
+    name: 'Contact Attempted'
+  },
+  {
+    id: 'a7cda590-5c7d-4368-aa08-c09380024aac',
+    stage_key: 'contacted',
+    name: 'Contacted'
+  },
+  {
+    id: '5befa86e-91a5-44d6-9772-1269f0ccfa71',
+    stage_key: 'qualified',
+    name: 'Qualified'
+  },
+  {
+    id: 'd5c68b7a-9034-41ac-b5d0-da8e1907ea1c',
+    stage_key: 'viewing_scheduled',
+    name: 'Viewing Scheduled'
+  },
+  {
+    id: '3f54834b-df04-4ee6-9884-f3e25a603c2a',
+    stage_key: 'viewing_completed',
+    name: 'Viewing Completed'
+  },
+  {
+    id: '691547ff-31e0-4618-879c-86a36afd167d',
+    stage_key: 'negotiation',
+    name: 'Negotiation'
+  },
+  {
+    id: '15cc0c92-220a-481f-b899-3dfc46a2e9e4',
+    stage_key: 'booking_reserved',
+    name: 'Booking Reserved'
+  },
+  {
+    id: '67dfc1bc-9917-4c86-a999-748ea34d7240',
+    stage_key: 'won',
+    name: 'Won'
+  },
+  {
+    id: '43eb00a0-8174-47f9-8d8a-ecf5c3132d7f',
+    stage_key: 'lost',
+    name: 'Lost'
+  },
+  {
+    id: '9e383059-cb67-48a3-9721-a667a8a7b816',
+    stage_key: 'invalid',
+    name: 'Invalid'
+  },
+  {
+    id: '8331337c-bec9-4442-a560-5ac521335730',
+    stage_key: 'unqualified',
+    name: 'Unqualified'
+  },
+  {
+    id: 'f325ad16-4beb-474b-8f53-231c1fb7a5b5',
+    stage_key: 'nurture',
+    name: 'Nurture'
+  }
+]
+
+stderr | server/src/tests/api-crm-workflow.test.ts > Legacy CRM API workflow suite > P0 - CRM Core Workflow & Cross-Tenant Boundary Security (C4, C5, C6, E1) > Tenant B cannot spoof Tenant A context via X-Tenant-Id header (Returns 403)
+
+stderr | server/src/tests/api-crm-workflow.test.ts > Legacy CRM API workflow suite > P0 - CRM Core Workflow & Cross-Tenant Boundary Security (C4, C5, C6, E1) > Anti-Double-Booking: rejects overlapping viewing with different start time (10:15 - 10:45) with 409 Conflict
+
+stderr | server/src/tests/api-crm-workflow.test.ts > Legacy CRM API workflow suite > P0 - Role-Based Access Control, Operations Diagnostics & Projects CRUD > Privilege Escalation Prevention: sales_agent cannot invite members (403 Forbidden)
+
+ ✓ server/src/tests/api-crm-workflow.test.ts (12 tests) 1104ms
+ ✓ server/src/tests/platform-units.test.ts (30 tests) 73ms
+ ✓ server/src/tests/inbound-units.test.ts (26 tests) 12ms
+ ✓ src/lib/webhook-security.test.ts (18 tests) 12ms
+stderr | server/src/tests/realtime.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/realtime.test.ts
+◇ injected env (0) from .env.native
+
+ ✓ server/src/tests/realtime.test.ts (10 tests) 2294ms
+   ✓ realtime hub > events never cross tenants 412ms
+   ✓ realtime hub > per-role filtering: an auditor (no leads:read) does not receive lead events but does receive membership events 313ms
+ ✓ server/src/tests/authz.test.ts (69 tests) 18ms
+ ✓ server/src/tests/leads-units.test.ts (10 tests) 6ms
+stderr | server/src/tests/openapi.test.ts
+◇ injected env (18) from .env.native
+
+stderr | server/src/tests/openapi.test.ts
+◇ injected env (0) from .env.native
+
+stderr | server/src/tests/openapi.test.ts > operational endpoints > /metrics is protected in production-like config and exposes RED metrics in test
+
+ ✓ server/src/tests/openapi.test.ts (9 tests) 795ms
+ ✓ src/hooks/use-permissions.test.ts (7 tests) 3ms
+ ✓ server/src/tests/tasks-units.test.ts (5 tests) 15ms
+ ✓ src/lib/telemetry.test.ts (3 tests) 4ms
+ ✓ src/lib/utils.test.ts (8 tests) 21ms
+
+ Test Files  22 passed (22)
+      Tests  450 passed (450)
+   Start at  11:54:13
+   Duration  43.11s (transform 969ms, setup 45ms, collect 2.28s, tests 36.96s, environment 3ms, prepare 1.05s)
+

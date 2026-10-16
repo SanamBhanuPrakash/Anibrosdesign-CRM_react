@@ -1,0 +1,149 @@
+AUDIT_RESULT {
+ "defaultPipelineStages": [
+  "New → status=open, prob=5%, closed=false",
+  "Contact Attempted → status=open, prob=8%, closed=false",
+  "Contacted → status=contacted, prob=15%, closed=false",
+  "Qualified → status=qualified, prob=30%, closed=false",
+  "Viewing Scheduled → status=viewing_scheduled, prob=45%, closed=false",
+  "Viewing Completed → status=viewing_scheduled, prob=55%, closed=false",
+  "Negotiation → status=negotiation, prob=70%, closed=false",
+  "Booking Reserved → status=negotiation, prob=90%, closed=false",
+  "Won → status=won, prob=100%, closed=true",
+  "Lost → status=lost, prob=0%, closed=true",
+  "Invalid → status=disqualified, prob=0%, closed=true",
+  "Unqualified → status=disqualified, prob=0%, closed=true",
+  "Nurture → status=open, prob=10%, closed=false"
+ ],
+ "seededTransitions": {
+  "n": 27,
+  "withrequired": 0
+ },
+ "afterLeadCreated": {
+  "tasks": 0,
+  "activities": 1,
+  "notifications": 0
+ },
+ "scheduleViewing": {
+  "status": 201,
+  "msg": ""
+ },
+ "afterViewingScheduled": {
+  "tasks": 0,
+  "activities": 2,
+  "notifications": 0,
+  "leadStage": "New",
+  "nextFollowupAt": null
+ },
+ "viewingStatusVocabulary": "{scheduled,confirmed,completed,cancelled,no_show}",
+ "stageMoves": {
+  "Contacted": {
+   "status": 409,
+   "msg": "This pipeline does not allow moving a lead from “New” to “Contacted”",
+   "tasksNow": 0
+  },
+  "Qualified": {
+   "status": 409,
+   "msg": "This pipeline does not allow moving a lead from “New” to “Qualified”",
+   "tasksNow": 0
+  },
+  "Viewing Scheduled": {
+   "status": 409,
+   "msg": "This pipeline does not allow moving a lead from “New” to “Viewing Scheduled”",
+   "tasksNow": 0
+  },
+  "Viewing Completed": {
+   "status": 409,
+   "msg": "This pipeline does not allow moving a lead from “New” to “Viewing Completed”",
+   "tasksNow": 0
+  },
+  "Negotiation": {
+   "status": 409,
+   "msg": "This pipeline does not allow moving a lead from “New” to “Negotiation”",
+   "tasksNow": 0
+  }
+ },
+ "closeOutcomes": {
+  "Lost": {
+   "withoutDetails": {
+    "status": 409,
+    "msg": "This pipeline does not allow moving a lead from “New” to “Lost”"
+   },
+   "withReason": {
+    "status": 409,
+    "msg": "This pipeline does not allow moving a lead from “New” to “Lost”"
+   },
+   "closedAt": false
+  },
+  "Invalid": {
+   "withoutDetails": {
+    "status": 400,
+    "msg": "One or more fields are invalid"
+   },
+   "withReason": {
+    "status": 200,
+    "msg": ""
+   },
+   "statusAfter": "disqualified",
+   "closedAt": true
+  },
+  "Unqualified": {
+   "withoutDetails": {
+    "status": 400,
+    "msg": "One or more fields are invalid"
+   },
+   "withReason": {
+    "status": 200,
+    "msg": ""
+   },
+   "statusAfter": "disqualified",
+   "closedAt": true
+  },
+  "Won": {
+   "withoutDetails": {
+    "status": 409,
+    "msg": "This pipeline does not allow moving a lead from “New” to “Won”"
+   },
+   "withReason": {
+    "status": 409,
+    "msg": "This pipeline does not allow moving a lead from “New” to “Won”"
+   },
+   "closedAt": false
+  }
+ },
+ "viewingWithAgentFromAnotherWorkspace": {
+  "status": 201,
+  "msg": ""
+ },
+ "agentDetailsLeakedInList": [
+  {
+   "nameShown": true,
+   "emailShown": true
+  },
+  {
+   "nameShown": true,
+   "emailShown": true
+  }
+ ],
+ "scheduleViewingOnArchivedProperty": {
+  "status": 201,
+  "msg": ""
+ },
+ "matchIncludesArchivedProperty": true,
+ "scheduleViewingOnArchivedLead": {
+  "status": 201,
+  "msg": ""
+ },
+ "attributionTotals": {
+  "total_attributed": 8,
+  "bySource": [
+   {
+    "source": "other",
+    "lead_count": 8,
+    "won_count": 0,
+    "qualified_count": 0
+   }
+  ],
+  "liveLeadsInList": 7,
+  "testLeadsInList": 1
+ }
+}

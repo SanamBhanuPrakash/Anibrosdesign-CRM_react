@@ -1,0 +1,167 @@
+name: Anibros CRM — CI
+
+# The repository root IS the application (package.json lives here), so no job sets a working-directory.
+# Nothing here deploys or publishes anything.
+
+on:
+  push:
+    branches: [main, develop, 'feat/**']
+  pull_request:
+    branches: [main, develop]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: '24'
+
+jobs:
+  # ---------------------------------------------------------------------------------------------------------------
+  # Static analysis: both TypeScript projects, ESLint (errors fail the build), and the committed OpenAPI document
+  # + generated client types must match the routes (run `npm run api:types` after changing a route).
+  # ---------------------------------------------------------------------------------------------------------------
+  static-analysis:
+    name: Types, lint, API contract
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - name: TypeScript (server)
+        run: npx tsc --noEmit -p tsconfig.server.json
+      - name: TypeScript (app)
+        run: npx tsc --noEmit -p tsconfig.app.json
+      - name: ESLint
+        run: npm run lint
+      - name: OpenAPI document is up to date
+        run: npm run api:check
+
+  # ---------------------------------------------------------------------------------------------------------------
+  # Tests. Every suite creates its own disposable database (migrated from empty, restricted login roles that mirror
+  # production, so row-level security is genuinely enforced). The service user must be a superuser to create roles.
+  # ---------------------------------------------------------------------------------------------------------------
+  test:
+    name: Tests (Vitest, PostgreSQL 17)
+    runs-on: ubuntu-latest
+    needs: static-analysis
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: anibros
+          POSTGRES_PASSWORD: dev-only-not-a-secret
+          POSTGRES_DB: anibros_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U anibros"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      NODE_ENV: test
+      DATABASE_TEST_URL: postgresql://anibros:dev-only-not-a-secret@localhost:5432/anibros_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - name: Run all tests
+        run: npm test
+      - name: Remove leftover test databases
+        if: always()
+        run: npm run test:db:clean
+
+  build:
+    name: Frontend build
+    runs-on: ubuntu-latest
+    needs: static-analysis
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: dist/
+          retention-days: 3
+
+  # ---------------------------------------------------------------------------------------------------------------
+  # Security. High and critical advisories in PRODUCTION dependencies fail the build (they are what ships).
+  # Dev-only tooling advisories are reported for visibility but do not block, because they never reach production.
+  # ---------------------------------------------------------------------------------------------------------------
+  security:
+    name: Dependency audit and secret scan
+    runs-on: ubuntu-latest
+    needs: static-analysis
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - name: Production dependencies (blocking at high)
+        run: npm audit --omit=dev --audit-level=high
+      - name: All dependencies (report only)
+        run: npm audit --audit-level=high || true
+      - name: Scan the pull request for verified secrets
+        if: github.event_name == 'pull_request'
+        uses: trufflesecurity/trufflehog@v3.88.0
+        with:
+          path: ./
+          base: ${{ github.event.pull_request.base.sha }}
+          head: ${{ github.event.pull_request.head.sha }}
+          extra_args: --only-verified
+
+  # ---------------------------------------------------------------------------------------------------------------
+  # Migrations: from an empty database, and a data-preserving upgrade from the previous schema.
+  # ---------------------------------------------------------------------------------------------------------------
+  migrations:
+    name: Migrations (fresh and upgrade)
+    runs-on: ubuntu-latest
+    needs: static-analysis
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: anibros
+          POSTGRES_PASSWORD: dev-only-not-a-secret
+          POSTGRES_DB: anibros_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U anibros"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      NODE_ENV: test
+      DATABASE_TEST_URL: postgresql://anibros:dev-only-not-a-secret@localhost:5432/anibros_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - name: Fresh install and upgrade tests
+        run: npx vitest run server/src/tests/native-database-foundation.test.ts server/src/tests/upgrade-slice0.test.ts
+      - name: Remove leftover test databases
+        if: always()
+        run: npm run test:db:clean

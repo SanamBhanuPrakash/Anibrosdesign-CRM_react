@@ -1,0 +1,39 @@
+# ==============================================================================
+# ANIBROSDESIGN CRM — Native Local Development Services
+# ==============================================================================
+name: anibrosdesign-crm
+
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: anibrosdesign-crm-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: anibros
+      POSTGRES_PASSWORD: ${ANIBROSDESIGN_DB_PASSWORD:?set ANIBROSDESIGN_DB_PASSWORD in .env}
+      POSTGRES_DB: anibrosdesign
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      # Strictly bind to local loopback interface on dedicated isolated port 5542 (the original CRM uses 5442)
+      - "127.0.0.1:5542:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U anibros -d anibrosdesign"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  mailpit:
+    image: axllent/mailpit:v1.31
+    container_name: anibrosdesign-crm-mailpit
+    restart: unless-stopped
+    ports:
+      # Local development mail sink (SMTP & Web UI)
+      - "127.0.0.1:1125:1025"
+      - "127.0.0.1:8125:8025"
+
+volumes:
+  postgres_data:
+    name: anibrosdesign_crm_postgres_data
